@@ -1,0 +1,16 @@
+function Anti()
+while wait() do
+if game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').Health <= 5 then
+game.Players.LocalPlayer.Character.Humanoid:Destroy()
+end
+end
+end
+
+game.Players.LocalPlayer.Character:WaitForChild("FULLY_LOADED_CHAR")
+    Anti()
+
+game.Players.LocalPlayer.CharacterAdded:connect(function()
+    game.Players.LocalPlayer.Character:WaitForChild("FULLY_LOADED_CHAR")
+    wait(0.5)
+    Anti()
+end)

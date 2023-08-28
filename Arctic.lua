@@ -1,0 +1,1 @@
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Karz1337/Arctic/main/ArcticV2"))()

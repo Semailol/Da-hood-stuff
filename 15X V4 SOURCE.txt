@@ -1,0 +1,386 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TabBar = Instance.new("Frame")
+local Silentaim = Instance.new("TextButton")
+local OtherStuff = Instance.new("TextButton")
+local Important = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local Aimlock = Instance.new("TextButton")
+local triggerbot = Instance.new("TextButton")
+local ImportantTab = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local importantlabel = Instance.new("TextLabel")
+local Esptab = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Espbutton = Instance.new("TextButton")
+local Esplabel = Instance.new("TextLabel")
+local Silentaimtab = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Silentaimbutton = Instance.new("TextButton")
+local Silentaimlabel = Instance.new("TextLabel")
+local Aimlocktab = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Aimlockbutton = Instance.new("TextButton")
+local OtherStufftab = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local triggerbottab = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Triggerbotbutton = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.170185715, 0, 0.0655401722, 0)
+Main.Size = UDim2.new(0, 561, 0, 522)
+Main.Active = true
+Main.Visible = true
+Main.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 5
+Title.Position = UDim2.new(0.0247636698, 0, 0.0175118651, 0)
+Title.Size = UDim2.new(0, 515, 0, 24)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "15X V4"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 18.000
+
+UICorner.Parent = Title
+
+TabBar.Name = "TabBar"
+TabBar.Parent = Main
+TabBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabBar.BackgroundTransparency = 1.000
+TabBar.Position = UDim2.new(0, 0, 0.0751980096, 0)
+TabBar.Size = UDim2.new(0, 530, 0, 21)
+
+Silentaim.Name = "Silent aim"
+Silentaim.Parent = TabBar
+Silentaim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Silentaim.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Silentaim.BorderSizePixel = 0
+Silentaim.Position = UDim2.new(0.364170521, 0, 0.0733591691, 0)
+Silentaim.Size = UDim2.new(0, 84, 0, 23)
+Silentaim.Style = Enum.ButtonStyle.RobloxButtonDefault
+Silentaim.Font = Enum.Font.Nunito
+Silentaim.Text = "Silent aim"
+Silentaim.TextColor3 = Color3.fromRGB(255, 255, 255)
+Silentaim.TextSize = 20.000
+Silentaim.TextWrapped = true
+Silentaim.MouseButton1Down:connect(function()
+	Silentaimtab.Visible = true
+	Aimlocktab.Visible = false
+	Esptab.Visible = false
+	triggerbottab.Visible = false
+	ImportantTab.Visible = false
+end)
+
+OtherStuff.Name = "Other Stuff"
+OtherStuff.Parent = TabBar
+OtherStuff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OtherStuff.BorderColor3 = Color3.fromRGB(27, 42, 53)
+OtherStuff.BorderSizePixel = 0
+OtherStuff.Position = UDim2.new(0.0115347812, 0, 0.0733591691, 0)
+OtherStuff.Size = UDim2.new(0, 92, 0, 23)
+OtherStuff.Style = Enum.ButtonStyle.RobloxButtonDefault
+OtherStuff.Font = Enum.Font.Nunito
+OtherStuff.Text = "Other Stuff"
+OtherStuff.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherStuff.TextSize = 20.000
+OtherStuff.TextWrapped = true
+
+Important.Name = "Important"
+Important.Parent = TabBar
+Important.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Important.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Important.BorderSizePixel = 0
+Important.Position = UDim2.new(0.895137131, 0, 0.0733591691, 0)
+Important.Size = UDim2.new(0, 86, 0, 23)
+Important.Style = Enum.ButtonStyle.RobloxButtonDefault
+Important.Font = Enum.Font.Nunito
+Important.Text = "Important"
+Important.TextColor3 = Color3.fromRGB(255, 255, 255)
+Important.TextSize = 20.000
+Important.TextWrapped = true
+Important.MouseButton1Down:connect(function()
+	ImportantTab.Visible = true
+	Silentaimtab.Visible = false
+	Aimlocktab.Visible = false
+	Esptab.Visible = false
+	triggerbottab.Visible = false
+end)
+
+Esp.Name = "Esp"
+Esp.Parent = TabBar
+Esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Esp.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.53853333, 0, 0.0733591691, 0)
+Esp.Size = UDim2.new(0, 77, 0, 23)
+Esp.Style = Enum.ButtonStyle.RobloxButtonDefault
+Esp.Font = Enum.Font.Nunito
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 20.000
+Esp.TextWrapped = true
+Esp.MouseButton1Down:connect(function()
+	Esptab.Visible = true
+	ImportantTab.Visible = false
+	Silentaimtab.Visible = false
+	Aimlocktab.Visible = false
+	triggerbottab.Visible = false
+end)
+
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = TabBar
+Aimlock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Aimlock.BorderSizePixel = 0
+Aimlock.Position = UDim2.new(0.201303273, 0, 0.0733591691, 0)
+Aimlock.Size = UDim2.new(0, 80, 0, 23)
+Aimlock.Style = Enum.ButtonStyle.RobloxButtonDefault
+Aimlock.Font = Enum.Font.Nunito
+Aimlock.Text = "Aimlock"
+Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.TextSize = 20.000
+Aimlock.TextWrapped = true
+Aimlock.MouseButton1Down:connect(function()
+	Aimlocktab.Visible = true
+	ImportantTab.Visible = false
+	Silentaimtab.Visible = false
+	Esptab.Visible = false
+	triggerbottab.Visible = false
+end)
+
+triggerbot.Name = "trigger bot"
+triggerbot.Parent = TabBar
+triggerbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+triggerbot.BorderColor3 = Color3.fromRGB(27, 42, 53)
+triggerbot.BorderSizePixel = 0
+triggerbot.Position = UDim2.new(0.703793168, 0, 0.0733591691, 0)
+triggerbot.Size = UDim2.new(0, 93, 0, 23)
+triggerbot.Style = Enum.ButtonStyle.RobloxButtonDefault
+triggerbot.Font = Enum.Font.Nunito
+triggerbot.Text = "Trigger bot"
+triggerbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+triggerbot.TextSize = 20.000
+triggerbot.TextWrapped = true
+triggerbot.MouseButton1Down:connect(function()
+	triggerbottab.Visible = true
+	ImportantTab.Visible = false
+	Silentaimtab.Visible = false
+	Aimlocktab.Visible = false
+	Esptab.Visible = false
+end)
+
+ImportantTab.Name = "Important Tab"
+ImportantTab.Parent = Main
+ImportantTab.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+ImportantTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImportantTab.Position = UDim2.new(0.0633381307, 0, 0.190790907, 0)
+ImportantTab.Size = UDim2.new(0, 489, 0, 388)
+
+UICorner_2.Parent = ImportantTab
+
+importantlabel.Name = "important label"
+importantlabel.Parent = ImportantTab
+importantlabel.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+importantlabel.BackgroundTransparency = 1.000
+importantlabel.BorderSizePixel = 0
+importantlabel.Position = UDim2.new(0.0470347665, 0, 0.108247414, 0)
+importantlabel.Size = UDim2.new(0, 440, 0, 289)
+importantlabel.Font = Enum.Font.SourceSans
+importantlabel.Text = "Press V to close this gui, Press V again to open it again"
+importantlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+importantlabel.TextScaled = true
+importantlabel.TextSize = 14.000
+importantlabel.TextWrapped = true
+
+Esptab.Name = "Esp tab"
+Esptab.Parent = Main
+Esptab.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Esptab.Position = UDim2.new(0.0377358943, 0, 0.17193678, 0)
+Esptab.Size = UDim2.new(0, 489, 0, 388)
+Esptab.Visible = false
+
+UICorner_3.Parent = Esptab
+
+Espbutton.Name = "Esp button"
+Espbutton.Parent = Esptab
+Espbutton.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Espbutton.BorderSizePixel = 0
+Espbutton.Position = UDim2.new(0.294478536, 0, 0.108247422, 0)
+Espbutton.Size = UDim2.new(0, 200, 0, 50)
+Espbutton.Font = Enum.Font.SourceSans
+Espbutton.Text = "Esp"
+Espbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Espbutton.TextScaled = true
+Espbutton.TextSize = 14.000
+Espbutton.TextWrapped = true
+Espbutton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/XP1YZGJW"))()
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "15X";
+		Text = "Succesfully turned on esp!";
+		Icon = "";
+		Duration = 5;
+		Callback = NotificationBindable;
+	})
+end)
+
+Esplabel.Name = "Esp label"
+Esplabel.Parent = Esptab
+Esplabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Esplabel.BorderSizePixel = 0
+Esplabel.Position = UDim2.new(0.0163599178, 0, 0.311855674, 0)
+Esplabel.Size = UDim2.new(0, 475, 0, 50)
+Esplabel.Font = Enum.Font.SourceSans
+Esplabel.Text = "Esp is on loop cannot turn off"
+Esplabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esplabel.TextScaled = true
+Esplabel.TextSize = 14.000
+Esplabel.TextWrapped = true
+
+Silentaimtab.Name = "Silent aim tab"
+Silentaimtab.Parent = Main
+Silentaimtab.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Silentaimtab.Position = UDim2.new(0.0377358794, 0, 0.187747002, 0)
+Silentaimtab.Size = UDim2.new(0, 489, 0, 388)
+Silentaimtab.Visible = false
+
+UICorner_4.Parent = Silentaimtab
+
+Silentaimbutton.Name = "Silent aim button"
+Silentaimbutton.Parent = Silentaimtab
+Silentaimbutton.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Silentaimbutton.BorderSizePixel = 0
+Silentaimbutton.Position = UDim2.new(0.294478536, 0, 0.12113402, 0)
+Silentaimbutton.Size = UDim2.new(0, 200, 0, 50)
+Silentaimbutton.Font = Enum.Font.SourceSans
+Silentaimbutton.Text = "Silent Aim"
+Silentaimbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Silentaimbutton.TextScaled = true
+Silentaimbutton.TextSize = 14.000
+Silentaimbutton.TextWrapped = true
+Silentaimbutton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/8J5R74fT"))()
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "15X";
+		Text = "Succesfully turned on silent aim!";
+		Icon = "";
+		Duration = 5;
+		Callback = NotificationBindable;
+	})
+end)
+
+Silentaimlabel.Name = "Silent aim label"
+Silentaimlabel.Parent = Silentaimtab
+Silentaimlabel.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Silentaimlabel.BorderSizePixel = 0
+Silentaimlabel.Position = UDim2.new(0.0163599178, 0, 0.360824734, 0)
+Silentaimlabel.Size = UDim2.new(0, 473, 0, 50)
+Silentaimlabel.Font = Enum.Font.SourceSans
+Silentaimlabel.Text = "Silent aim on loop cannot turn off"
+Silentaimlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+Silentaimlabel.TextScaled = true
+Silentaimlabel.TextSize = 14.000
+Silentaimlabel.TextWrapped = true
+
+Aimlocktab.Name = "Aimlock tab"
+Aimlocktab.Parent = Main
+Aimlocktab.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Aimlocktab.Position = UDim2.new(0.0377358198, 0, 0.18577078, 0)
+Aimlocktab.Size = UDim2.new(0, 489, 0, 388)
+Aimlocktab.Visible = false
+
+UICorner_5.Parent = Aimlocktab
+
+Aimlockbutton.Name = "Aimlock button"
+Aimlockbutton.Parent = Aimlocktab
+Aimlockbutton.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Aimlockbutton.BorderSizePixel = 0
+Aimlockbutton.Position = UDim2.new(0.308793455, 0, 0.342783511, 0)
+Aimlockbutton.Size = UDim2.new(0, 200, 0, 50)
+Aimlockbutton.Font = Enum.Font.SourceSans
+Aimlockbutton.Text = "Aimlock"
+Aimlockbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlockbutton.TextScaled = true
+Aimlockbutton.TextSize = 14.000
+Aimlockbutton.TextWrapped = true
+Aimlockbutton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/NCvfi4C2"))()
+end)
+
+OtherStufftab.Name = "Other Stuff tab"
+OtherStufftab.Parent = Main
+OtherStufftab.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+OtherStufftab.Position = UDim2.new(0.0623102486, 0, 0.162055314, 0)
+OtherStufftab.Size = UDim2.new(0, 489, 0, 388)
+OtherStufftab.Visible = false
+
+UICorner_6.Parent = OtherStufftab
+
+triggerbottab.Name = "triggerbot tab"
+triggerbottab.Parent = Main
+triggerbottab.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+triggerbottab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+triggerbottab.Position = UDim2.new(0.047618866, 0, 0.189579397, 0)
+triggerbottab.Size = UDim2.new(0, 489, 0, 388)
+triggerbottab.Visible = false
+
+UICorner_7.Parent = triggerbottab
+
+Triggerbotbutton.Name = "Trigger bot button"
+Triggerbotbutton.Parent = triggerbottab
+Triggerbotbutton.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Triggerbotbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Triggerbotbutton.BorderSizePixel = 10
+Triggerbotbutton.Position = UDim2.new(0.319018394, 0, 0.262886584, 0)
+Triggerbotbutton.Size = UDim2.new(0, 200, 0, 50)
+Triggerbotbutton.Font = Enum.Font.SourceSans
+Triggerbotbutton.Text = "Trigger bot ( - to turn it on and  - to turn it off)"
+Triggerbotbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Triggerbotbutton.TextScaled = true
+Triggerbotbutton.TextSize = 14.000
+Triggerbotbutton.TextWrapped = true
+Triggerbotbutton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/5bGYAsZT"))()
+	local NotificationBindable = Instance.new("BindableFunction")
+	NotificationBindable.OnInvoke = callback
+	game.StarterGui:SetCore("SendNotification",  {
+		Title = "15X";
+		Text = "Succesfully turned on trigger bot! To turn it off press - to turn it off press -";
+		Icon = "";
+		Duration = 5;
+		Callback = NotificationBindable;
+	})
+end)
+
+local function WWIOOJ_fake_script()
+	local script = Instance.new('LocalScript', Main)
+
+	player = game.Players.LocalPlayer
+	
+	player:GetMouse().KeyDown:Connect(function(key)
+		if key == "v" and script.Parent.Visible == false then
+			script.Parent.Visible = true
+		else
+			if key == "v" and script.Parent.Visible == true then
+				script.Parent.Visible = false
+			end
+		end
+	end)
+end
+coroutine.wrap(WWIOOJ_fake_script)()
