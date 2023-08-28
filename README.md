@@ -1,1 +1,1 @@
-# Da-hood-stuff
+# Jojo stand owner stuff that he leaked
