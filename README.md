@@ -1,2 +1,1 @@
-# Jojo stand owner stuff that he leaked
-PART 1
+Part 2 https://github.com/Semailol/Da-hood-stuff-part-2
